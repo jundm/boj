@@ -14,3 +14,4 @@ s1 = set(DontKnow)
 s2 = set(NoSee)
 result = list(s1 & s2)
 print(len(result), *sorted(result), sep="\n")
+
