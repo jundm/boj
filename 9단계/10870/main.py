@@ -1,7 +1,10 @@
 import sys
 
-input = sys.stdin.readline().strip()
+input = int(sys.stdin.readline().strip())
 
 
 def Fibonacci(n):
-    pass
+    return Fibonacci(n - 1) + Fibonacci(n - 2) if n >= 2 else n
+
+
+print(Fibonacci(input))
